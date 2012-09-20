@@ -1,0 +1,33 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Pie</title>
+    <link rel="stylesheet" href="build/build.css">
+    <style>
+      body {
+        background: #EBEBEB;
+        padding: 150px;
+      }
+      canvas {
+        margin: 10px;
+      }
+      .big-pie {
+        color: #5d8dc7;
+        background: #78b5ff;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="build/build.js"></script>
+    <script>
+      var Piecon = require('piecon');
+      var pie = new Piecon;
+
+      var n = 0;
+      setInterval(function(){
+        pie.update(n += (Math.random() * 5 | 0));
+      }, 50);
+    </script>
+  </body>
+</html>
