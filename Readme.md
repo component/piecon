@@ -5,7 +5,7 @@
   inspired by the original [piecon](https://github.com/lipka/piecon). Styled
   with CSS!
 
-  ![](http://f.cl.ly/items/360n3W0D2I451205041b/Screen%20Shot%202012-09-19%20at%204.35.54%20PM.png)
+  ![js pie favicons](http://f.cl.ly/items/3T2g1b2w1j2t3e3A1Y3r/Screen%20Shot%202012-09-20%20at%2012.55.50%20PM.png)
 
 ## Installation
 
