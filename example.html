@@ -25,8 +25,9 @@
       var pie = new Piecon;
 
       var n = 0;
-      setInterval(function(){
+      var id = setInterval(function(){
         pie.update(n += (Math.random() * 5 | 0));
+        if (n >= 100) clearInterval(id);
       }, 50);
     </script>
   </body>
