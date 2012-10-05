@@ -6,6 +6,7 @@
 var style = require('style')
   , inherit = require('inherit')
   , favicon = require('favicon')
+  , autoscale = require('autoscale-canvas')
   , Pie = require('pie');
 
 /**
@@ -25,8 +26,8 @@ module.exports = Piecon;
 
 function Piecon(selector) {
   if (!(this instanceof Piecon)) return new Piecon(selector);
-  this.canvas = document.createElement('canvas');
-  this.ctx = this.canvas.getContext('2d');
+  this.el = document.createElement('canvas');
+  this.ctx = this.el.getContext('2d');
   Pie.call(this, selector);
 }
 
@@ -46,8 +47,9 @@ inherit(Piecon, Pie);
 
 Piecon.prototype.size = function(n){
   this._size = n;
-  this.canvas.width = n;
-  this.canvas.height = n;
+  this.el.width = n;
+  this.el.height = n;
+  autoscale(this.el);
   return this;
 };
 
@@ -62,6 +64,6 @@ Piecon.prototype.size = function(n){
 Piecon.prototype.update = function(n){
   this.percent = n;
   this.draw(this.ctx);
-  favicon(this.canvas.toDataURL());
+  favicon(this.el.toDataURL());
   return this;
 };
