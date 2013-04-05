@@ -26,9 +26,9 @@
 
       var n = 0;
       var id = setInterval(function(){
-        pie.update(n += (Math.random() * 5 | 0));
+        pie.update(n++);
         if (n >= 100) clearInterval(id);
-      }, 50);
+      }, 150);
     </script>
   </body>
 </html>
