@@ -41,6 +41,10 @@
 
   Set the diameter to `n`.
 
+### Piecon#reset()
+
+  Reset favicon.
+
 # License
 
   MIT
