@@ -3,11 +3,11 @@
  * Module dependencies.
  */
 
-var style = require('style')
-  , inherit = require('inherit')
-  , favicon = require('favicon')
-  , autoscale = require('autoscale-canvas')
-  , Pie = require('pie');
+var style = require('style');
+var inherit = require('inherit');
+var favicon = require('favicon');
+var autoscale = require('autoscale-canvas');
+var Pie = require('pie');
 
 /**
  * Expose `Piecon()`.
@@ -66,4 +66,14 @@ Piecon.prototype.update = function(n){
   this.draw(this.ctx);
   favicon(this.el.toDataURL());
   return this;
+};
+
+/**
+ * Reset favicon.
+ *
+ * @api public
+ */
+
+Piecon.prototype.reset = function(){
+  favicon.reset();
 };

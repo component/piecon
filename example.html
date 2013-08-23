@@ -3,6 +3,7 @@
   <head>
     <title>Pie</title>
     <link rel="stylesheet" href="build/build.css">
+    <link rel="icon" href="favicon.ico">
     <style>
       body {
         background: #EBEBEB;
@@ -24,11 +25,16 @@
       var Piecon = require('piecon');
       var pie = new Piecon;
 
-      var n = 0;
-      var id = setInterval(function(){
-        pie.update(n++);
-        if (n >= 100) clearInterval(id);
-      }, 150);
+      setTimeout(function(){
+        var n = 0;
+        var id = setInterval(function(){
+          pie.update(n++);
+          if (n >= 100) {
+            clearInterval(id);
+            pie.reset();
+          }
+        }, 50);
+      }, 1500);
     </script>
   </body>
 </html>
