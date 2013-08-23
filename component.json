@@ -8,7 +8,7 @@
     "component/style": "*",
     "component/inherit": "*",
     "component/pie": "*",
-    "component/favicon": "*",
+    "component/favicon": "1.0.3",
     "component/autoscale-canvas": "*"
   },
   "scripts": [
