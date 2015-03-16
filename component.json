@@ -2,8 +2,13 @@
   "name": "piecon",
   "repo": "component/piecon",
   "description": "Pie chart favicons to indicator progress",
-  "version": "0.0.3",
-  "keywords": ["pie", "chart", "favicon", "progress"],
+  "version": "0.0.4",
+  "keywords": [
+    "pie",
+    "chart",
+    "favicon",
+    "progress"
+  ],
   "dependencies": {
     "component/style": "*",
     "component/inherit": "*",

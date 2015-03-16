@@ -1,8 +1,13 @@
 {
   "name": "component-piecon",
   "description": "Pie charts for component/favicon",
-  "version": "0.0.3",
-  "keywords": ["pie", "chart", "favicon", "progress"],
+  "version": "0.0.4",
+  "keywords": [
+    "pie",
+    "chart",
+    "favicon",
+    "progress"
+  ],
   "dependencies": {
     "style-component": "*",
     "component-inherit": "*",
@@ -20,7 +25,9 @@
     "scripts": {
       "piecon/index.js": "index.js"
     },
-    "styles": ["piecon.css"]
+    "styles": [
+      "piecon.css"
+    ]
   },
   "repository": {
     "type": "git",
