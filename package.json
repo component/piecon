@@ -10,10 +10,14 @@
     "autoscale-canvas": "*",
     "favicon-component": "1.0.3"
   },
+  "browser": {
+
+  },
   "component": {
     "scripts": {
       "piecon/index.js": "index.js"
     },
     "styles": ["piecon.css"]
-  }
+  },
+  "license": "MIT"
 }

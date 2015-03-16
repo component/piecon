@@ -16,5 +16,6 @@
   ],
   "styles": [
     "piecon.css"
-  ]
+  ],
+  "license": "MIT"
 }
