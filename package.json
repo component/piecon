@@ -1,5 +1,5 @@
 {
-  "name": "piecon-component",
+  "name": "component-piecon",
   "description": "Pie charts for component/favicon",
   "version": "0.0.3",
   "keywords": ["pie", "chart", "favicon", "progress"],
