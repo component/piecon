@@ -5,13 +5,16 @@
   "keywords": ["pie", "chart", "favicon", "progress"],
   "dependencies": {
     "style-component": "*",
-    "inherit-component": "*",
-    "pie-component": "*",
+    "component-inherit": "*",
+    "component-pie": "*",
     "autoscale-canvas": "*",
     "favicon-component": "1.0.3"
   },
   "browser": {
-
+    "style": "style-component",
+    "inherit": "component-inherit",
+    "pie": "component-pie",
+    "favicon": "favicon-component"
   },
   "component": {
     "scripts": {
